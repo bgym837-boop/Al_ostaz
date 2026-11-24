@@ -1,0 +1,23 @@
+62) !important;
+-webkit-backdrop-filter: saturate(200%) blur(28px) !important; backdrop-filter: saturate(200%) blur(28px) !important;
+box-shadow: 0 8px 30px rgba(0,0,0,.45), inset 0 .5px 0 rgba(255,255,255,.18) !important;
+}
+.light .app-shell .sidebar.ios-sidebar { background: rgba(250,250,252,.7) !important; border-color: rgba(0,0,0,.08) !important; box-shadow: 0 8px 30px rgba(0,0,0,.14) !important; }
+.app-shell .sidebar.ios-sidebar nav { display: grid !important; grid-template-columns: repeat(5, 1fr) !important; gap: 2px !important; height: 100% !important; }
+.app-shell .sidebar.ios-sidebar nav a {
+min-height: 0 !important; height: 100%; padding: 4px 2px !important; border-radius: 26px !important;
+display: flex !important; flex-direction: column; align-items: center; justify-content: center; gap: 3px !important;
+font-size: 10.5px !important; font-weight: 500; color: var(--muted) !important; background: transparent !important;
+}
+.app-shell .sidebar.ios-sidebar nav a svg { width: 24px !important; height: 24px !important; stroke-width: 1.8; }
+.app-shell .sidebar.ios-sidebar nav a.active { background: rgba(120,120,128,.28) !important; color: var(--blue) !important; font-weight: 600; }
+.light .app-shell .sidebar.ios-sidebar nav a.active { background: rgba(120,120,128,.16) !important; }
+.main { padding-bottom: calc(104px + env(safe-area-inset-bottom, 0px)) !important; }
+}
+
+/* Restructured home: plain action row instead of the hero banner /
+.home-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 0 0 12px; }
+.home-actions .primary, .home-actions .secondary { min-height: 46px; font-size: 15px; justify-content: center; }
+/ Groups: sort picker now lives in the toolbar as a grouped row */
+.groups-toolbar .group-sort-control { display: flex !important; align-items: center; justify-content: space-between; gap: 10px; padding: 0 14px; min-height: 44px; background: var(--surface-2); border-radius: 12px; color: var(--text); font-size: 15px; }
+.groups-toolbar .group-sort-control select { background: transparent !important; border: 0 !important; color: var(--blue) !important; font: inherit; max-width: 60%; }
