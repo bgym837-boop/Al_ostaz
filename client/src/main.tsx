@@ -23,7 +23,7 @@ import { LanguageProvider } from "./contexts/LanguageContext";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import "./index.css";
 import "./responsive-shell.css";
-
+import "./ios-theme.css";
 const queryClient = new QueryClient({ defaultOptions: { queries: { networkMode: "offlineFirst", staleTime: 60_000, retry: 1 } } });
 try {
   const cached = localStorage.getItem("ostazi-query-cache-v1");
